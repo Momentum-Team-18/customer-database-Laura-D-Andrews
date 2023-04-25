@@ -19,11 +19,9 @@ for (let customer of customers) {
   customerName.innerText = `${customer.name.first} ${customer.name.last}`;
 
   let firstSlice = `${customer.name.first.slice(1, 9)}`;
-  let firstCapital =
-    `${customer.name.first.slice(0, 1).toUpperCase()}` + firstSlice;
+  let firstCapital =`${customer.name.first.slice(0, 1).toUpperCase()}` + firstSlice;
   let lastSlice = `${customer.name.last.slice(1, 9)}`;
-  let lastCapital =
-    `${customer.name.last.slice(0, 1).toUpperCase()}` + lastSlice;
+  let lastCapital =`${customer.name.last.slice(0, 1).toUpperCase()}` + lastSlice;
   customerName.innerText = `${firstCapital} ${lastCapital}`;
 
   customerCard.appendChild(customerName);
