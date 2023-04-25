@@ -6,11 +6,18 @@ let directoryBox = document.querySelector("#directoryBox");
 for (let customer of customers) {
   let customerCard = document.createElement("div");
   customerCard.style.border = '1px solid black'
+  customerCard.style.padding = '5px'
+  customerCard.style.display = 'flex'
+  customerCard.style.flexDirection = 'column'
+  customerCard.style.alignItems = 'center'
+  customerCard.style.margin = '5px'
+  
 
   // picture
   let customerPicture = document.createElement("img");
   customerPicture.src = customer.picture.large;
   customerCard.appendChild(customerPicture);
+  
 
   // name
   let customerName = document.createElement("h1");

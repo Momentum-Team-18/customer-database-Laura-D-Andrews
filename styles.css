@@ -15,27 +15,27 @@ body {
 }
 
 #directoryBox {
-    display: flex; 
-    flex-wrap: wrap; 
+    display: grid; 
+    grid-template-columns: repeat(3, 280px);
+    justify-content: center;
     background-color: #DAA49A; 
     padding: 20px; 
 }
 img {
-    border-radius: 10em 15em; 
+    border-radius: 8em 15em; 
     padding-top: 20px;
+    width: 125px; 
 }
 
 .custName {
     font-size: 28px;
     font-weight: 600;
-    margin: 10px 0px; 
 }
 
 .custEmail {
     font-size: 16px; 
     font-family: 'source sans pro';
-    font-weight: 300;
-    margin: 10px 0px;
+    font-weight: 300;    
    
 }
 
@@ -43,5 +43,4 @@ img {
     font-size: 20px; 
     font-family: 'source sans pro';
     font-weight: 300;
-    padding-right: 45px;
 }
