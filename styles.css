@@ -16,10 +16,10 @@ body {
 }
 #directoryBox {
     display: grid; 
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(4, 300px);
     justify-content: center;
     background-color: #DAA49A; 
-    padding: 20px; 
+    padding: 30px; 
     border: 2px solid #D8DBE2; 
 }
 img {

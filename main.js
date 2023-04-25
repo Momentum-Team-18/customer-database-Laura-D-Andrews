@@ -38,7 +38,8 @@ for (let customer of customers) {
   // address
   let customerAddress = document.createElement("p");
   let formatState = nameToAbbr(customer.location.state);
-  customerAddress.innerText = `${customer.location.street.number} ${customer.location.street.name} \n ${customer.location.city} ${formatState} ${customer.location.postcode}`;
+  customerAddress.innerText = `${customer.location.street.number} ${customer.location.street.name} \n 
+  ${customer.location.city} ${formatState} ${customer.location.postcode}`;
   customerCard.appendChild(customerAddress);
   customerAddress.classList.add("custInfo");
 
