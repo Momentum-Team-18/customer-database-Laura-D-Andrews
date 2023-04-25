@@ -12,7 +12,7 @@ for (let customer of customers) {
 
 // picture
     let customerPicture = document.createElement('img')
-    customerPicture.src = customer.picture.medium
+    customerPicture.src = customer.picture.large
     customerCard.appendChild(customerPicture)
 
 // name
@@ -25,25 +25,25 @@ for (let customer of customers) {
     let customerEmail = document.createElement('p')
     customerEmail.innerText = customer.email // singular thing so don't need template literal
     customerCard.appendChild(customerEmail); 
-    customerEmail.classList.add('custEmail')
+    customerEmail.classList.add('custInfo')
 
 // address
     let customerAddress = document.createElement('p')
     customerAddress.innerText = `${customer.location.street.number} ${customer.location.street.name} ${customer.location.city} ${customer.location.state} ${customer.location.postcode}`
     customerCard.appendChild(customerAddress); 
-    customerAddress.classList.add('custAddress')
+    customerAddress.classList.add('custInfo')
 
 // DOB
     let customerDob = document.createElement('p')
     customerDob.innerText = `DOB: ${customer.dob.date}`
     customerCard.appendChild(customerDob)
-    customerDob.classList.add('custDob')
+    customerDob.classList.add('custInfo')
 
 // customer since
     let customerSince = document.createElement('p')
     customerSince.innerText = `Customer Since: ${customer.registered.date}`
     customerCard.appendChild(customerSince)
-    customerSince.classList.add('custSince')
+    customerSince.classList.add('custInfo')
 
 
     directoryBox.appendChild(customerCard) // append customerCard to directoryBox at end

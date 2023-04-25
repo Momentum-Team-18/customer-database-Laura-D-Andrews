@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@300;600&family=Roboto+Mono:wght@500&display=swap');
+
+body {
+    color: #373F51;
+    background-color: #373F51;
+    font-family: 'nunito sans';
+    padding: 20px 15px; 
+}
+
+.heading {
+    color: #D8DBE2; 
+    font-size: 40px; 
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 #directoryBox {
     display: flex; 
     flex-wrap: wrap; 
-    border: 1px solid black; 
+    background-color: #DAA49A; 
     padding: 20px; 
 }
 
@@ -10,10 +26,11 @@
 } */
 
 .custName {
-    color: red; 
+    font-size: 28px;
+    font-weight: 600;
 }
 
-/* .custEmail */
-/* custAddress */
-/* .custDob */
-/* .custSince
+.custInfo {
+    font-size: 18px;
+    font-weight: 300; 
+}
