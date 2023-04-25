@@ -1,11 +1,13 @@
 console.log(customers)
 
 let directoryBox = document.querySelector('#directoryBox')
+// let customerBox = document.querySelectorAll('.customerBox')
 
 // build a container for each customer and populate it with just their name
 
 
 // create div for each customer card - add to existing loop for all other data
+
 
 for (let customer of customers) {
     let customerCard = document.createElement('div');

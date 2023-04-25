@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@300;600&family=Roboto+Mono:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@300;600&family=Roboto+Mono:wght@500&family=Source+Sans+Pro:wght@200&display=swap');
 body {
     color: #373F51;
     background-color: #373F51;
@@ -22,15 +22,20 @@ body {
 }
 
 /* .customerBox {
-    border: 1px solid black; 
+    border: 1px solid #D8DBE2; 
+    padding: 20px; 
+    margin: 5px; 
 } */
 
 .custName {
     font-size: 28px;
     font-weight: 600;
+    margin: 10px 0px; 
 }
 
 .custInfo {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300; 
+    font-family: 'source sans pro'; 
+    margin: 4px 0px; 
 }
