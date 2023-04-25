@@ -1,0 +1,15 @@
+Getting Started
+create html, css, js files and link
+Make sure customers array is available on main.js - console.log it (lets you know it's connected)
+hard code 1 customer in html so that you know what you are asking JS to build
+get js to create elements to show each customers name to show on page
+move or comment out hard code
+get JS to a build a container for each customer
+put the name in the container for each customer - do some minimal css to lay out containers
+put the email address inside each container with js - emails are unique
+put the image via js
+put the street address - figure out how to get state abbreviations from state names w/ JS
+put the address in the container
+figure out how to format dates - DOB and member since
+put dates in container
+also need to figure out name formatting (because all lowercased - modify innerText (title cased?) )

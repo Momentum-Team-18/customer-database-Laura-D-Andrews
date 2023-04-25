@@ -71,3 +71,24 @@ function nameToAbbr (stateName) {
 
   return usStates[idx].abbreviation
 }
+
+
+// let directoryBox = document.querySelector('#directoryBox')
+// console.log(directoryBox)
+
+// let desiredData = 'name' 
+// for (let state of usStates) {
+// console.log(state[desiredData])
+// }
+// logs state names 
+
+// let otherDesiredDate = 'abbreviation'
+// for (let abb of usStates) {
+//   console.log(abb[otherDesiredDate])
+
+// log state abbreviations 
+
+// function findAbbByStateName(name, abb)
+// let stateAbbreviation = []
+
+// findAbbByStateName('North Carolina', usStates)

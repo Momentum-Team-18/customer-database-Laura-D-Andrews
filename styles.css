@@ -1,0 +1,19 @@
+#directoryBox {
+    display: flex; 
+    flex-wrap: wrap; 
+    border: 1px solid black; 
+    padding: 20px; 
+}
+
+/* .customerBox {
+    border: 1px solid black; 
+} */
+
+.custName {
+    color: red; 
+}
+
+/* .custEmail */
+/* custAddress */
+/* .custDob */
+/* .custSince
