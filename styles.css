@@ -17,15 +17,13 @@ body {
 #directoryBox {
     display: flex; 
     flex-wrap: wrap; 
+    
     background-color: #DAA49A; 
     padding: 20px; 
 }
-
-/* .customerBox {
-    border: 1px solid #D8DBE2; 
-    padding: 20px; 
-    margin: 5px; 
-} */
+img {
+    border-radius: 10em 15em; 
+}
 
 .custName {
     font-size: 28px;
@@ -33,9 +31,14 @@ body {
     margin: 10px 0px; 
 }
 
-.custInfo {
+.custEmail {
+    font-size: 13px; 
+    font-family: 'source sans pro';
+    font-weight: 300;
+}
+/* .custAddress {
     font-size: 16px;
     font-weight: 300; 
     font-family: 'source sans pro'; 
     margin: 4px 0px; 
-}
+} */

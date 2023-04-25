@@ -3,10 +3,8 @@ console.log(customers)
 let directoryBox = document.querySelector('#directoryBox')
 // let customerBox = document.querySelectorAll('.customerBox')
 
-// build a container for each customer and populate it with just their name
+// let addCustomerBoxDiv = function
 
-
-// create div for each customer card - add to existing loop for all other data
 
 
 for (let customer of customers) {
@@ -27,23 +25,25 @@ for (let customer of customers) {
     let customerEmail = document.createElement('p')
     customerEmail.innerText = customer.email // singular thing so don't need template literal
     customerCard.appendChild(customerEmail); 
-    customerEmail.classList.add('custInfo')
+    customerEmail.classList.add('custEmail')
 
-// address
+// address1
     let customerAddress = document.createElement('p')
-    customerAddress.innerText = `${customer.location.street.number} ${customer.location.street.name} ${customer.location.city} ${customer.location.state} ${customer.location.postcode}`
+    customerAddress.innerText = `${customer.location.street.number} ${customer.location.street.name} \n ${customer.location.city} ${customer.location.state} ${customer.location.postcode}`
     customerCard.appendChild(customerAddress); 
     customerAddress.classList.add('custInfo')
-
+           
 // DOB
     let customerDob = document.createElement('p')
-    customerDob.innerText = `DOB: ${customer.dob.date}`
+    let formatDob = moment(customer.dob.date).format("MMM Do YY")
+    customerDob.innerText = `DOB: ${formatDob}`
     customerCard.appendChild(customerDob)
     customerDob.classList.add('custInfo')
 
 // customer since
     let customerSince = document.createElement('p')
-    customerSince.innerText = `Customer Since: ${customer.registered.date}`
+    let formatSince = moment(customer.registered.date).format("MMM Do YY")
+    customerSince.innerText = `Customer Since: ${formatSince}`
     customerCard.appendChild(customerSince)
     customerSince.classList.add('custInfo')
 
@@ -51,3 +51,4 @@ for (let customer of customers) {
     directoryBox.appendChild(customerCard) // append customerCard to directoryBox at end
 }
 
+// create/declare a variable to represent the formatted date (let etc..)
