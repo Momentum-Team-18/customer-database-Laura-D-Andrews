@@ -2,12 +2,7 @@ let directoryBox = document.querySelector("#directoryBox");
 
 for (let customer of customers) {
   let customerCard = document.createElement("div");
-  customerCard.style.border = "2px solid #D8DBE2";
-  customerCard.style.padding = "5px";
-  customerCard.style.display = "flex";
-  customerCard.style.flexDirection = "column";
-  customerCard.style.alignItems = "center";
-  customerCard.style.margin = "5px";
+  customerCard.classList.add("custCard"); 
 
   // picture
   let customerPicture = document.createElement("img");
@@ -36,8 +31,7 @@ for (let customer of customers) {
   // address
   let customerAddress = document.createElement("p");
   let formatState = nameToAbbr(customer.location.state);
-  customerAddress.innerText = `${customer.location.street.number} ${customer.location.street.name} \n 
-  ${customer.location.city} ${formatState} ${customer.location.postcode}`;
+  customerAddress.innerText = `${customer.location.street.number} ${customer.location.street.name}\n${customer.location.city} ${formatState} ${customer.location.postcode}`;
   customerCard.appendChild(customerAddress);
   customerAddress.classList.add("custInfo");
 

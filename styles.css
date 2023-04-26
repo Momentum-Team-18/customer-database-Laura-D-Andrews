@@ -1,50 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@300;600&family=Roboto+Mono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@300;600&family=Roboto+Mono:wght@500&family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@300;600&family=Roboto+Mono:wght@500&family=Source+Sans+Pro:wght@200;400;600&display=swap');
 
 body {
+    font-family: 'source sans pro';
     color: #373F51;
-    background-color: #373F51;
-    font-family: 'nunito sans';
-    padding: 25px; 
+    padding: 10px; 
+    background-color: #373F51; 
 }
 .heading {
-    color: #D8DBE2; 
+    font-family: 'nunito sans';
     font-size: 46px; 
     text-align: center;
-    padding-bottom: 20px;
+    color: #D8DBE2; 
     font-weight: 600; 
+    padding-bottom: 20px;   
 }
 #directoryBox {
-    display: grid; 
-    grid-template-columns: repeat(4, 300px);
-    justify-content: center;
-    background-color: #DAA49A; 
-    padding: 30px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    padding: 5px; 
     border: 2px solid #D8DBE2; 
+    background-color: #DAA49A; 
+}
+.custCard {
+    display: flex; 
+    flex-direction: column; 
+    flex: auto 1 1; 
+    align-items: center;  
+    margin: 5px; 
+    width: 230px; 
+    border: 2px solid #D8DBE2;
 }
 img {
     border-radius: 0em 0em 15em 15em; 
     padding-top: 15px; 
-    width: 125px; 
+    width: 125px;  
 }
 .custName {
-    color: #D8DBE2;
+    font-family: 'nunito sans';
     font-size: 28px;
-    font-weight: 600;
-    margin: 5px 0px; 
-    width: 286px; 
-    background-color: #373F51; 
     text-align: center;
+    color: #D8DBE2;
+    margin: 5px 0px; 
+    width: 100%; 
+    background-color: #373F51;  
 }
 .custEmail {
-    font-size: 20px; 
-    font-family: 'source sans pro';
-    font-weight: 300; 
+    font-size: 17px; 
+    font-weight: 600; 
     margin-top: 5px;     
 }
 .custInfo {
-    font-size: 14px; 
-    font-family: 'source sans pro';
-    font-weight: 300;
+    font-size: 17px; 
+    font-weight: 200; 
     margin-top: 5px; 
+    padding-left: 30px; 
+    width: 100%; 
 }
